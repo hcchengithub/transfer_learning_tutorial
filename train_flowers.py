@@ -269,10 +269,10 @@ def run():
 
                     # optionally, print your logits and predictions for a sanity check that things are going fine.
                     logits_value, probabilities_value, predictions_value, labels_value = sess.run([logits, probabilities, predictions, labels])
-                    print 'logits: \n', logits_value
-                    print 'Probabilities: \n', probabilities_value
-                    print 'predictions: \n', predictions_value
-                    print 'Labels:\n:', labels_value
+                    print ('logits: \n', logits_value)
+                    print ('Probabilities: \n', probabilities_value)
+                    print ('predictions: \n', predictions_value)
+                    print ('Labels:\n:', labels_value)
 
                 #Log the summaries every 10 step.
                 if step % 10 == 0:
